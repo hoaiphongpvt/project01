@@ -611,6 +611,7 @@ a {
     height: 28px;
     margin-left: 16px;
     border-radius: 4px;
+    background: #F9F9F9;
 }
 
 .footer .link:hover {
