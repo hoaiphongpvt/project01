@@ -1,0 +1,248 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .view-all-mobile {
+        display: none;
+    }
+}
+
+/* Tablet and mobile */
+@media screen and (max-width: 991px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .menu svg {
+        width: 28px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        padding: 60px;
+        background: #FFF;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: .5s ease;
+    } 
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        font-weight: 500;
+        color: #333;
+        padding: 14px 0 14px 14px;
+    }
+
+    .menu-drawer ul a:hover {
+        background-color: #f9f9f9;
+    }
+
+    .saperate {
+        border-top: 1px solid #ebebeb;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero .info {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .hero .desc {
+        width: 60%;
+        margin: 30px auto auto auto;
+        text-align: center;
+    }
+
+    .client .img {
+        gap: 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .list-guides .item {
+        margin: 0;
+        flex: 1;
+    }
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block, .stats .info {
+        width: 100%;
+    }
+
+    .stats .img-block {
+        margin-top: 80px;
+        order: 2;
+    }
+
+    .stats .info {
+        order: 1;
+        padding: 0;
+    }
+
+    .stats .sub-title {
+        width: 70%;
+    }
+    
+    .stats .info .desc {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: row;
+    }
+
+    .stats .qty {
+        font-weight: 500;
+        font-size: 5.4rem;
+    }
+
+    .stats .qty-desc {
+        margin-top: 14px;
+    }
+
+    .subscription .image {
+        display: none;
+    }
+
+    .footer .row-top {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 80px;
+    }
+}   
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .view-all-mobile {
+        display: none;
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 40px;
+    } 
+
+    .action {
+        display: none;
+    }
+
+    .hero .title {
+        margin-top: 20px;
+        font-size: 5.2rem;
+    }
+
+    .hero .desc {
+        width: 90%;
+    }
+
+    .client .row-desc {
+        display: none;
+    }
+
+    .list-guides {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .featured .link  {
+        display: none;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr;
+    }
+
+    .featured .thumb {
+        width: 100%;
+    }
+
+    .view-all-mobile {
+        margin-top: 60px;
+        font-size: 1.8rem;
+    }
+
+    .stats .sub-title {
+        width: 100%;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .qty-item {
+        text-align: center;
+    }
+
+    .stats .qty-desc {
+        margin-top: 10px;
+    }
+
+    .footer .row-top {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer .row-bottom {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
